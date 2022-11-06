@@ -1,0 +1,220 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #000, #333);
+}
+
+.container .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 500px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container .content .user-input {
+    width: 100%;
+    grid-column: 1/3;
+    margin-bottom: 10px;
+}
+
+.container .content .user-input label {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.1em;
+}
+
+.container .content .user-input input {
+    border: none;
+    outline: none;
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+    border: 1px solid pink;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.container .content .user-input input:focus {
+    border: 1px solid lightgreen;
+}
+
+.container .content .calc-years {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 3px;
+    margin-right: 5px;
+}
+
+.container .content .calc-years label {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.container .content .calc-years input {
+    position: absolute;
+    left: 35%;
+}
+
+.container .content .calc-months {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 3px;
+    margin-right: 5px;
+}
+
+.container .content .calc-months label {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.container .content .calc-months input {
+    position: absolute;
+    left: 44%;
+}
+
+.container .content .calc-days {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}
+
+.container .content .calc-days label {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.container .content .calc-days input {
+    position: absolute;
+    left: 35%;
+}
+
+.container .content .calc-hours {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}
+
+.container .content .calc-hours label {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.container .content .calc-hours input {
+    position: absolute;
+    left: 44%;
+}
+
+.container .content .calc-min {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}
+
+.container .content .calc-min label {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.container .content .calc-min input {
+    position: absolute;
+    left: 35%;
+}
+
+.container .content .calc-seconds {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}
+
+.container .content .calc-seconds label {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.container .content .calc-seconds input {
+    position: absolute;
+    left: 44%;
+}
+
+.container .content button {
+    grid-column: 1/2;
+    border: none;
+    padding: 5px 20px;
+    background-color: lightcoral;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.container .content button:hover {
+    background-color: lightgreen;
+}
+
+.container .content .result {
+    grid-column: 2/3;
+    position: relative;
+    display: flex;
+}
+
+.container .content .result p {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #bb377d;
+    font-weight: 500;
+    font-size: 1em;
+}
